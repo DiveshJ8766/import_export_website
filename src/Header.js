@@ -14,7 +14,7 @@ const Header = () => {
           We invest in the world’s potential
         </motion.h1>
         <motion.p 
-        initial={{ x: 300, opacity: 0 }}
+        initial={{ x: -300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
           className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">

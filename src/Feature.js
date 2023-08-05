@@ -6,7 +6,7 @@ const Feature = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: false, // Animation will only trigger once
-    // threshold: 0.1, // Percentage of element visibility required to trigger the animation
+    threshold: 0.1, // Percentage of element visibility required to trigger the animation
   });
 
   return (
@@ -36,8 +36,8 @@ const Feature = () => {
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0" >
           <motion.div
-          initial={{ opacity: 0 }} // Initial animation properties
-          animate={inView ? { opacity: 1} : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}} // Animation properties when in view
           transition={{ duration: 0.5 }} // Animation duration
             className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -69,8 +69,8 @@ const Feature = () => {
             </motion.p>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0 }} // Initial animation properties
-          animate={inView ? { opacity: 1 } : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}}
           transition={{ duration: 0.5 }} // Animation duration
            className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -97,8 +97,8 @@ const Feature = () => {
             </motion.p>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0}} // Initial animation properties
-          animate={inView ? { opacity: 1} : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}}
           transition={{ duration: 0.5 }} // Animation duration
            className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -134,8 +134,8 @@ const Feature = () => {
             </motion.p>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0 }} // Initial animation properties
-          animate={inView ? { opacity: 1 } : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}}
           transition={{ duration: 0.5 }} // Animation duration
            className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -167,8 +167,8 @@ const Feature = () => {
             </motion.p>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0 }} // Initial animation properties
-          animate={inView ? { opacity: 1} : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}}
           transition={{ duration: 0.5 }} // Animation duration
            className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -198,8 +198,8 @@ const Feature = () => {
             </motion.p>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0 }} // Initial animation properties
-          animate={inView ? { opacity: 1} : {}} // Animation properties when in view
+          initial={{ opacity: 0,scale: 0.5 }} // Initial animation properties
+          animate={inView ? { opacity: 1,scale:1} : {}}
           transition={{ duration: 0.5 }} // Animation duration
            className="rounded-md border border-gray-200 shadow-lg p-2">
             <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
