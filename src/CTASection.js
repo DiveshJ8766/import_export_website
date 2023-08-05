@@ -69,23 +69,13 @@ const CTASection = () => {
         />
       </div>
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <motion.img
+      <motion.div
           style={{
             transform: isInView ? "none" : "translateX(-200px)",
             opacity: isInView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
           }} 
-          className="w-full animate-bounce dark:hidden"
-          src={img2}
-          alt="dashboard image"
-        />
-        <motion.div
-          style={{
-            transform: isInView ? "none" : "translateX(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
-          }} 
-        className="mt-4 md:mt-0">
+        className="mt-4 md:mt-0 order-last">
           <h4 className="mb-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           Take Your Business to the Next Level with Our International Trade Solutions
           </h4>
@@ -111,6 +101,17 @@ const CTASection = () => {
             </svg>
           </a>
         </motion.div>
+        <motion.img
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
+          }} 
+          className="w-full order-first animate-bounce dark:hidden"
+          src={img2}
+          alt="dashboard image"
+        />
+        
       </div>
     </section>
   );

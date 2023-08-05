@@ -26,7 +26,7 @@ const ContactUs = () => {
           Need details about our Business plan? Let us know.
         </p>
         <form action="#" style={{
-            transform: inView ? "none" : "translateX(200px)",
+            transform: inView ? "none" : "translateX(-200px)",
             opacity: inView ? 1 : 0,
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
           }}  className="space-y-8">

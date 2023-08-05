@@ -9,10 +9,7 @@ const VideoSection = () => {
       
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}>
+          <motion.div>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
               Watch Our Video
             </h2>
@@ -21,10 +18,7 @@ const VideoSection = () => {
             </p>
           </motion.div
           >
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}>
+          <motion.div>
           <iframe style={{borderRadius:"10px"}} className=" w-full h-56 md:h-72 lg:h-80" src="https://www.youtube.com/embed/q5UWVgxt3gk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </motion.div>
         </div>

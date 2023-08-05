@@ -14,11 +14,11 @@ function App() {
       <Header />
       <CTASection />
       <VideoSection />
-      <Feature />
+        <Feature />
       <CarouselSection />
       <AccordionSection />
-      <ContactUs />
-      <Footer />
+        <ContactUs />
+     <Footer />
     </div>
   );
 }
